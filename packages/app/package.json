@@ -1,0 +1,7 @@
+{
+  "name": "@nextjs/app",
+  "version": "0.0.1",
+  "description": "RN module",
+  "main": "lib/index.js",
+  "license": "MIT"
+}
