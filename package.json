@@ -1,11 +1,14 @@
 {
   "name": "nextjs",
   "version": "0.1.0",
-  "private": true,
+  "engines": {
+    "node": "12.x"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "postinstall": "next build"
   },
   "dependencies": {
     "next": "9.5.1",
