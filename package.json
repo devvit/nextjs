@@ -7,12 +7,12 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "node server.js",
     "postinstall": "next build"
   },
   "dependencies": {
-    "next": "9.5.1",
-    "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "next": "^9.5.3",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   }
 }
