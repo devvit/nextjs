@@ -2,9 +2,9 @@
 
 const next = require('next');
 const { parse } = require('url');
-const { createServer } = require('http');
+// const { createServer } = require('http');
 
-// const { Hub } = require('./src');
+const { Hub } = require('./lib');
 
 const app = next({ dev: process.env['NODE_ENV'] !== 'production' });
 const handle = app.getRequestHandler();
@@ -19,6 +19,7 @@ const getHttpPort = () => {
   return 4000;
 };
 
+/*
 app.prepare().then(() => {
 
   createServer((req, res) => {
@@ -30,10 +31,10 @@ app.prepare().then(() => {
   });
 
 });
+*/
 
-/*
 const hub = new Hub({
-  service: `ws://0.0.0.0:${process.env['HTTP_PORT']}/ss`,
+  service: `ws://0.0.0.0:${getHttpPort()}/ss`,
   key: 'www.facebook.com',
   presets: [
     {
@@ -61,9 +62,8 @@ hub.run()
       })
     });
 
-// console.log(server);
+    // console.log(server);
   })
   .catch((err) => {
     // console.error(err);
   });
-  */
