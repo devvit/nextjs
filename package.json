@@ -8,7 +8,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "node server.js",
-    "compile": "NODE_ENV=production babel _src --out-dir _lib --ignore __tests__,__mocks__ --presets='latest-node' --plugins='@babel/plugin-proposal-class-properties,@babel/plugin-proposal-object-rest-spread'",
+    "compile": "NODE_ENV=production babel src --out-dir lib --ignore __tests__,__mocks__ --presets='latest-node' --plugins='@babel/plugin-proposal-class-properties,@babel/plugin-proposal-object-rest-spread'",
     "postinstall": "next build"
   },
   "dependencies": {
