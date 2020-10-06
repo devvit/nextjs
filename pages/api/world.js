@@ -1,6 +1,8 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+//
 
-export default (req, res) => {
+import axios from 'axios'
+
+export default async (req, res) => {
   res.statusCode = 200
-  res.json({ name: 'world' })
+  res.send((await axios.get(req.query.url)).data)
 }
