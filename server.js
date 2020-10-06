@@ -22,6 +22,7 @@ const getHttpPort = () => {
 
 /*
 app.prepare().then(() => {
+
   createServer((req, res) => {
     const parsedUrl = parse(req.url, true);
     handle(req, res, parsedUrl);
