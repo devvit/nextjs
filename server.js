@@ -10,6 +10,7 @@ const app = next({ dev: process.env['NODE_ENV'] !== 'production' });
 const handle = app.getRequestHandler();
 
 const getHttpPort = () => {
+
   if (!!process.env['PORT']) {
     return process.env['PORT'];
   } else if (!!process.env['BLUEMIX_REGION'] || !!process.env['KUBERNETES_SERVICE_HOST']) {
