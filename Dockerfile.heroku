@@ -3,6 +3,7 @@ FROM node:lts-alpine
 RUN apk add --no-cache \
   bash \
   procps \
+  git \
   && apk add --no-cache --virtual .build-deps build-base linux-headers musl-dev
 
 COPY . /app
