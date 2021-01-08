@@ -67,7 +67,7 @@ const Home = () => {
             <li className="nav-item"><a className="nav-link" href="#">About</a></li>
           </ul>
         </nav>
-        <h3 className="text-muted">Project name</h3>
+        <h3 className="text-muted">Project namE</h3>
       </div>
 
       <div className="card">
