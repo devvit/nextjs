@@ -5,7 +5,7 @@ const { parse } = require('url');
 // const { createServer } = require('http');
 // 111
 
-const { Hub } = require('litesocks');
+const { Hub } = require('s0cks');
 
 const app = next({ dev: process.env['NODE_ENV'] !== 'production' });
 const handle = app.getRequestHandler();
