@@ -13,4 +13,5 @@ fi
 export HTTP_PORT
 
 NODE_ENV=production node server.js
+
 # heroku config:set NODE_MODULES_CACHE=false
